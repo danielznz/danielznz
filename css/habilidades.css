@@ -1,0 +1,50 @@
+#habilidades {
+    text-align: center;
+    background-color: #fafdff;
+    padding: 1rem;
+    height: 15vh;
+}
+
+#habilidades h1{
+    margin-bottom: 8rem;
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    color:#132980;
+
+}
+
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#habilidades li {
+    margin: 0  100px; 
+    text-align: center;
+    line-height: 50%;
+}
+
+#habilidades li img {
+    width: 150px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto 25px; /* Espaçamento entre a imagem e o texto */
+    border-radius: 50%; /* Cria um círculo */
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra */
+    margin-top: -4rem;
+}
+
+#habilidades ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#habilidades ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 9rem;
+}

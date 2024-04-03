@@ -1,0 +1,241 @@
+#contato {
+    height: 80vh;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo-contato{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #132980;
+    margin-top: -5rem;
+    margin-bottom: 5rem;
+}
+
+.contato1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario {
+    width: 35%; /* Ajuste conforme necessário */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 5px #1329801e;
+    background-color: #132980;
+}
+
+.formulario h1{
+    color: #FFCD78;
+    font-size: 2.5rem;
+    
+}
+
+.input-texto,
+.formulario textarea {
+    width: calc(100% - 16px); /* Ajuste para compensar o padding */
+    font-size: 0.9rem;
+    padding: 20px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box; 
+}
+
+.formulario textarea {
+    margin-top: -1rem;
+    font-size: 1rem;
+}
+
+.imagem {
+    width: 75%; /* Ajuste conforme necessário */
+    max-width: 500px; /* Evita que a imagem fique muito grande */
+    transition: transform 0.3s ease; 
+    animation: float 4s ease-in-out infinite;
+}
+
+
+.imagem:hover {
+    transform: scale(1.05); /* Escala de 110% quando o mouse está sobre o ícone */
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+
+.enviar{
+    width: 97%;
+    height: 4rem;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: "Red Hat Display", sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Adicionando transição */
+    background-size: 500% 100%;
+    background-image: linear-gradient(to left, #6982FF, #6b60ff, #6982FF);
+    color: #fafdff;
+    animation: degrade-animado 10s infinite alternate;
+    font-family: "Bakbak One", sans-serif;
+    transition: box-shadow 0.3s;
+    transition: transform 0.3s ease; 
+    border-radius: 10px;
+}
+
+.enviar:hover{
+    box-shadow: 0 0 20px #6982ff9a;
+    transform: scale(1.02); /* Escala de 110% quando o mouse está sobre o ícone */
+}
+
+.input-texto:focus {
+   outline: 3px solid #6b60ff;
+}
+
+textarea:focus{
+    outline: 3px solid #6b60ff;
+}
+
+
+@media (max-width: 768px) {
+    .contato1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario,
+    .imagem {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    margin-top: 3rem;
+    background-color: #132980;
+    color: #fff;
+    padding: 0.1rem 0;
+    text-align: center;
+    position:static;
+}
+
+.znz{
+   color: #6982FF;
+}
+
+#footer .direitos-reservados {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 13rem;
+    margin-top: 2rem;
+}
+
+
+ul img {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.contato{
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    position: relative;
+    gap: 80px;
+    margin-top: -2.5rem;
+    margin-left: 45%;
+}
+
+.contato li {
+    background-color: #132980;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: width 0.2s ease; 
+    
+}
+
+.contato  li:hover {
+    width: 160px;
+}
+
+.contato li .icon {
+    font-size: 1.5rem;
+    transition: transform 0.2s ease; /* Melhora a transição do ícone */
+
+}
+
+.contato a{
+    text-decoration: none;
+}
+
+.contato li .text {
+    color: #ffffff;
+    font-size: 1rem;
+    transform: scale(0);
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Melhora a transição do texto */
+    transition-delay: 0.1s;
+}
+
+.contato :hover .text {
+    transform: scale(1);
+}
+
+.contato li:hover .icon {
+    transform: scale(0);
+}
+
+.contato li::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(45deg, #6982FF, #6b60ff);
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+    transition: opacity 0.3s ease; /* Melhora a transição do background */
+}
+
+.contato  li:hover::before {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+

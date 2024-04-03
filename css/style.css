@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sa;
+    background-color:  #fafdff; 
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.interface{
+    background-color: #fafdff;
+}
+
+.titulo-projetos, .titulo-contato,#habilidades h1{
+    visibility: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #FFCD78;
+}
+
+
+
