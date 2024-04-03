@@ -12,7 +12,7 @@ body {
     background-color: #fafdff;
 }
 
-.titulo-projetos, .titulo-contato,#habilidades h1{
+.titulo-projetos, #habilidades h1{
     visibility: hidden;
 }
 
