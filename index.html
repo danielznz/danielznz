@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/contato.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bakbak+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -129,42 +130,11 @@
     </section>
 
 </div>
+
 </body>
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    // Adiciona rolagem suave para todos os links âncora na página
-    $("a").on('click', function(event) {
-        // Certifica-se de que this.hash tem um valor antes de superar o comportamento padrão
-        if (this.hash !== "") {
-            // Previne o comportamento de clique padrão
-            event.preventDefault();
-
-            // Armazena o hash
-            var hash = this.hash;
-
-            // Usa jQuery's animate() para adicionar rolagem suave
-            // O número opcional (800) especifica o número de milissegundos que leva para rolar até a área especificada
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                // Adiciona hash (#) à URL quando concluído a rolagem (comportamento de clique de hash)
-                window.location.hash = hash;
-            });
-        } // Fim do if
-    });
-});
-
-window.sr = ScrollReveal({reset: true});
-sr.reveal('.titulo-projetos',{duration:2000,distance:'90px',delay: '150'})
-sr.reveal('.titulo-contato',{duration:2000,distance:'90px',delay: '150'})
-sr.reveal('#habilidades h1',{duration:2000,distance:'90px',delay: '150'})
+<script src="./js/index.js"></script>
 
 
 
-
-</script>
 </html>
