@@ -1,8 +1,8 @@
-<h1 align="center">Olá 👋 eu sou o Daniel<br>Desenvolvedor Front-End</h1>
+<h1 align="left">Olá 👋 eu sou o Daniel<br>Desenvolvedor Front-End</h1>
 
 ###
 
-<p align="center">Sou um entusiasta de tecnologia e atualmente estou focado <br>em estudar e dominar as tecnologias de desenvolvimento web, pois<br>meu grande sonho é me tornar um desenvolvedor front-end.</p>
+<p align="left">Sou um entusiasta de tecnologia e atualmente estou focado <br>em estudar e dominar as tecnologias de desenvolvimento web, pois<br>meu grande sonho é me tornar um desenvolvedor front-end.</p>
 
 ###
 
